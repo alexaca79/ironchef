@@ -1,0 +1,42 @@
+---
+title: "IRON CHEF COOOOOKIIINNGUUUUUUUU"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(dplyr)
+
+
+Names <- c("Alisha", "Andrew", "Jason", "Kenny", "Laura", "Mac", "Michelle", "Sadi", "Wilfrid", "Sonal")
+
+Challengers <- sample(Names, 2, replace = FALSE)
+
+Food <- read.csv("food.csv", stringsAsFactors = FALSE)
+
+Secret.ingredent <- sample_n(Food,1)
+
+paste("The Secret Ingredient is", Secret.ingredent)
+
+paste("Fukui San","Fukui San","Fukui San")
+```
+
+
+## The Challengers are 
+
+```{r, echo=FALSE}
+paste( paste(Challengers[1]), "and" ,paste(Challengers[2]))
+
+```
+
+## The Secret Ingredient is 
+
+```{r, echo=FALSE}
+
+paste(Secret.ingredent)
+
+
+```
+
+### IRONNNNNN CUUUZZIIINNE
+
+##### Fukui San Fukui San Fukui San
